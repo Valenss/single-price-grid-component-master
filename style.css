@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+/* VARIABLES */
+:root{
+    --light-Gray: hsl(204, 43%, 93%);
+    --grayish-Blue: hsl(218, 22%, 67%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Cyan: hsl(179, 62%, 43%);
+    --Cyan-light: #4bbfbd;
+}
+ 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: white;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+font-family: 'Karla', sans-serif;
+width: 80%;
+border-radius: .6rem;
+overflow: hidden;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+max-width: 650px;
+}
+
+
+/* PARTE DE ARRIBA */
+.cabecera{
+    padding: 2.5rem;
+}
+.titulo{
+    color: var(--Cyan);
+    margin-bottom: 1.5rem;
+}
+.subtitulo{
+    color: var(--Bright-Yellow);
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+.parrafo_cabecera{
+    color: var(--grayish-Blue);
+}
+
+/* PARTE DE ABAJO */
+.seccion_abajo{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+
+/* SECCION IZQUIERDA */
+.seccion_izquierda{
+    padding: 2.5rem;
+    background-color:var(--Cyan);
+    width: 50%;
+}
+.subtitulo_izquierda{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+span{
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+.parrafo_price{
+    padding-left: 1rem;
+    color: var(--light-Gray);
+}
+.parrafo_izquierda{
+    color: var(--light-Gray);
+    margin-bottom: 1.5rem;
+}
+
+.button{
+    background-color: var(--Bright-Yellow);
+    display: inline-flex;
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+    text-decoration: none;
+    color: #FFF;
+    border-radius: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* SECCION DERECHA */
+.seccion_derecha{
+    padding: 2.5rem;
+    background-color:var(--Cyan-light);
+    width: 50%;
+}
+.titulo_derecha{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+.descripcion{
+    color: var(--light-Gray);
+    line-height: 1.4rem;
+}
+
+
+@media screen and (max-width: 600px) {
+    .parrafo_cabecera{
+        line-height: 1.8rem;
+    }
+    .seccion_abajo{
+        flex-direction: column;
+    } 
+    .seccion_derecha, .seccion_izquierda, .cabecera{
+        width: 100%;
+        padding: 1.5rem;
+    }
+}
